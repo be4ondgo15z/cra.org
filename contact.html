@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Cyber Rebellion Alliance (CRA)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        /* Navbar Styling */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #111;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 20px;
+        }
+        nav .logo {
+            font-weight: bold;
+            font-size: 24px;
+        }
+        /* Contact Page Styling */
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .contact-text {
+            flex: 1;
+            margin-right: 50px;
+        }
+        .contact-text h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #00FF00;
+        }
+        .contact-text p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .social-links a {
+            margin-right: 15px;
+            font-size: 24px;
+            color: #00FF00;
+            text-decoration: none;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        .social-links a:hover {
+            transform: scale(1.2);
+            color: #00cc00;
+        }
+        /* Form Styling */
+        .contact-form {
+            flex: 1;
+            background-color: #222;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #111;
+            border: none;
+            border-bottom: 2px solid #00FF00;
+            color: #fff;
+            font-size: 16px;
+        }
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-bottom: 2px solid #00cc00;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #00FF00;
+            border: none;
+            color: #000;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .contact-form button:hover {
+            background-color: #00cc00;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">CRA</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="members.html">Members</a>
+            <a href="works.html">Works</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <div class="contact-container">
+        <!-- Left Text Section -->
+        <div class="contact-text">
+            <h1>Contact CRA</h1>
+            <p>
+                Interested in joining the rebellion or have something to share? Feel free to reach out to us through this form or connect with us on social media.
+            </p>
+            <div class="social-links">
+                <a href="#" target="_blank">🔗 Facebook</a>
+                <a href="https://instagram.com/ramoware" target="_blank">🔗 Instagram</a>
+                <a href="#" target="_blank">🔗 Twitter</a>
+                <a href="#" target="_blank">🔗 YouTube</a>
+            </div>
+        </div>
+
+        <!-- Right Form Section -->
+        <form
+  class="contact-form"
+  action="https://script.google.com/macros/s/AKfycbye-cK2Tn3gPMaxOxQaD7GDwUqHDuBNr5zy1vKM74bXPkyRcRgJ--xBhl4fAQPu93LS/exec"
+  method="POST"
+  onsubmit="handleFormSubmit(event)"
+>
+    <input type="text" name="firstName" placeholder="First Name" required>
+    <input type="text" name="lastName" placeholder="Last Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <textarea name="message" rows="5" placeholder="How can we help you?" required></textarea>
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+  async function handleFormSubmit(event) {
+    event.preventDefault();
+    const form = event.target;
+
+    const formData = {
+      firstName: form.firstName.value,
+      lastName: form.lastName.value,
+      email: form.email.value,
+      message: form.message.value,
+    };
+
+    const response = await fetch(form.action, {
+      method: form.method,
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    const result = await response.text();
+    alert(result === "Success" ? "Message Sent!" : "Error sending message.");
+  }
+</script>
+
+    </div>
+
+</body>
+</html>
