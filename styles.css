@@ -28,6 +28,38 @@ nav .logo {
     color: #00ff00; /* Neon green for the logo */
 }
 
+/* Typewriter Effect */
+.typewriter {
+    position: absolute;
+    top: 80px; /* Below the navbar */
+    left: 20px; /* Add space from the left */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: #00ff00; /* Neon green for hacker aesthetic */
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0; /* Start with width 0 */
+    border-right: 3px solid #00ff00; /* Cursor effect */
+    animation: typing 6s steps(50) 1s forwards, blink 0.75s step-end infinite;
+}
+
+/* Typing Animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Cursor Blink Animation */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
 nav ul {
     list-style-type: none;
     display: flex;
