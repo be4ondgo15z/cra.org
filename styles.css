@@ -9,7 +9,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #111; /* Dark background to match the logo */
+    background-color: rgba(37,32,45,255); /* Dark background to match the logo */
     color: white;
 }
 
