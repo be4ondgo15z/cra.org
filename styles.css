@@ -57,6 +57,7 @@ nav ul li a:hover {
 }
 
 .home-page .logo-img {
-    max-width: 35%;
+    max-width: calc(35% - 10px); /* Remove 5px from both left and right */
+    max-height: calc(35% - 10px);
     height: auto;
 }
