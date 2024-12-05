@@ -40,7 +40,7 @@ nav .logo {
     overflow: hidden;
     width: 0; /* Start with width 0 */
     border-right: 3px solid #00ff00; /* Cursor effect */
-    animation: typing 6s steps(50) 1s forwards, blink 0.75s step-end infinite;
+    animation: typing 6s steps(40) 1s forwards, blink 0.75s step-end infinite;
 }
 
 /* Typing Animation */
