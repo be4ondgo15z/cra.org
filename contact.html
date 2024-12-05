@@ -152,7 +152,7 @@
 </form>
 
 <script>
-  document.getElementById("contact-form").addEventListener("submit", handleFormSubmit);
+  document.getElementById("contact-form").addEventListener("submit", handleFormSubmit(event));
 
 async function handleFormSubmit(event) {
   event.preventDefault(); // Prevent default form submission behavior
