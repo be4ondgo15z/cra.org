@@ -1,0 +1,62 @@
+/* styles.css */
+
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111; /* Dark background to match the logo */
+    color: white;
+}
+
+/* Navigation Bar Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00ff00; /* Neon green for the logo */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00ff00; /* Neon green on hover */
+}
+
+/* Home Page Content */
+.home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Adjust height as per your design needs */
+}
+
+.home-page .logo-img {
+    max-width: 100%;
+    height: auto;
+}
