@@ -63,8 +63,8 @@ All resources and tools provided by [Organization Name] are for educational purp
 ## 📬 Contact Us
 
 - **Email**: [ramdev.chaudhary@protonmail.com)
-- **Twitter**: [@YourTwitterHandle](https://twitter.com/YourTwitterHandle)
-- **LinkedIn**: [Your LinkedIn Page](https://linkedin.com/company/your-linkedin-page)
+- **Twitter**: [@TwitterHandle](https://twitter.com/YourTwitterHandle)
+- **LinkedIn**: [ LinkedIn Page](https://www.linkedin.com/in/ramdevchaudhary/)
 
 ---
 
